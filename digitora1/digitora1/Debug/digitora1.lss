@@ -1,0 +1,881 @@
+
+digitora1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         000000bc  00800100  0000059c  00000630  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000059c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000e  008001bc  008001bc  000006ec  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000006ec  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000071c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000058  00000000  00000000  00000758  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000b27  00000000  00000000  000007b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000847  00000000  00000000  000012d7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000004b6  00000000  00000000  00001b1e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000013c  00000000  00000000  00001fd4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000422  00000000  00000000  00002110  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000002bc  00000000  00000000  00002532  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  000027ee  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	4f c0       	rjmp	.+158    	; 0xa0 <__ctors_end>
+   2:	00 00       	nop
+   4:	6a c0       	rjmp	.+212    	; 0xda <__bad_interrupt>
+   6:	00 00       	nop
+   8:	68 c0       	rjmp	.+208    	; 0xda <__bad_interrupt>
+   a:	00 00       	nop
+   c:	66 c0       	rjmp	.+204    	; 0xda <__bad_interrupt>
+   e:	00 00       	nop
+  10:	64 c0       	rjmp	.+200    	; 0xda <__bad_interrupt>
+  12:	00 00       	nop
+  14:	62 c0       	rjmp	.+196    	; 0xda <__bad_interrupt>
+  16:	00 00       	nop
+  18:	60 c0       	rjmp	.+192    	; 0xda <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	5e c0       	rjmp	.+188    	; 0xda <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	5c c0       	rjmp	.+184    	; 0xda <__bad_interrupt>
+  22:	00 00       	nop
+  24:	5a c0       	rjmp	.+180    	; 0xda <__bad_interrupt>
+  26:	00 00       	nop
+  28:	58 c0       	rjmp	.+176    	; 0xda <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	56 c0       	rjmp	.+172    	; 0xda <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	54 c0       	rjmp	.+168    	; 0xda <__bad_interrupt>
+  32:	00 00       	nop
+  34:	52 c0       	rjmp	.+164    	; 0xda <__bad_interrupt>
+  36:	00 00       	nop
+  38:	50 c0       	rjmp	.+160    	; 0xda <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	4e c0       	rjmp	.+156    	; 0xda <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	05 c1       	rjmp	.+522    	; 0x24c <__vector_16>
+  42:	00 00       	nop
+  44:	4a c0       	rjmp	.+148    	; 0xda <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3c c1       	rjmp	.+632    	; 0x2c2 <__vector_18>
+  4a:	00 00       	nop
+  4c:	46 c0       	rjmp	.+140    	; 0xda <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	44 c0       	rjmp	.+136    	; 0xda <__bad_interrupt>
+  52:	00 00       	nop
+  54:	42 c0       	rjmp	.+132    	; 0xda <__bad_interrupt>
+  56:	00 00       	nop
+  58:	40 c0       	rjmp	.+128    	; 0xda <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	3e c0       	rjmp	.+124    	; 0xda <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	3c c0       	rjmp	.+120    	; 0xda <__bad_interrupt>
+  62:	00 00       	nop
+  64:	3a c0       	rjmp	.+116    	; 0xda <__bad_interrupt>
+  66:	00 00       	nop
+  68:	38 c0       	rjmp	.+112    	; 0xda <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	36 c0       	rjmp	.+108    	; 0xda <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	34 c0       	rjmp	.+104    	; 0xda <__bad_interrupt>
+  72:	00 00       	nop
+  74:	32 c0       	rjmp	.+100    	; 0xda <__bad_interrupt>
+  76:	00 00       	nop
+  78:	30 c0       	rjmp	.+96     	; 0xda <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	2e c0       	rjmp	.+92     	; 0xda <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	2c c0       	rjmp	.+88     	; 0xda <__bad_interrupt>
+  82:	00 00       	nop
+  84:	2a c0       	rjmp	.+84     	; 0xda <__bad_interrupt>
+  86:	00 00       	nop
+  88:	28 c0       	rjmp	.+80     	; 0xda <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	a1 01       	movw	r20, r2
+  8e:	a6 01       	movw	r20, r12
+  90:	ad 01       	movw	r20, r26
+  92:	b4 01       	movw	r22, r8
+  94:	bb 01       	movw	r22, r22
+  96:	c2 01       	movw	r24, r4
+  98:	c9 01       	movw	r24, r18
+  9a:	d0 01       	movw	r26, r0
+  9c:	d7 01       	movw	r26, r14
+  9e:	de 01       	movw	r26, r28
+
+000000a0 <__ctors_end>:
+  a0:	11 24       	eor	r1, r1
+  a2:	1f be       	out	0x3f, r1	; 63
+  a4:	cf ef       	ldi	r28, 0xFF	; 255
+  a6:	d0 e1       	ldi	r29, 0x10	; 16
+  a8:	de bf       	out	0x3e, r29	; 62
+  aa:	cd bf       	out	0x3d, r28	; 61
+
+000000ac <__do_copy_data>:
+  ac:	11 e0       	ldi	r17, 0x01	; 1
+  ae:	a0 e0       	ldi	r26, 0x00	; 0
+  b0:	b1 e0       	ldi	r27, 0x01	; 1
+  b2:	ec e9       	ldi	r30, 0x9C	; 156
+  b4:	f5 e0       	ldi	r31, 0x05	; 5
+  b6:	00 e0       	ldi	r16, 0x00	; 0
+  b8:	0b bf       	out	0x3b, r16	; 59
+  ba:	02 c0       	rjmp	.+4      	; 0xc0 <__do_copy_data+0x14>
+  bc:	07 90       	elpm	r0, Z+
+  be:	0d 92       	st	X+, r0
+  c0:	ac 3b       	cpi	r26, 0xBC	; 188
+  c2:	b1 07       	cpc	r27, r17
+  c4:	d9 f7       	brne	.-10     	; 0xbc <__do_copy_data+0x10>
+
+000000c6 <__do_clear_bss>:
+  c6:	21 e0       	ldi	r18, 0x01	; 1
+  c8:	ac eb       	ldi	r26, 0xBC	; 188
+  ca:	b1 e0       	ldi	r27, 0x01	; 1
+  cc:	01 c0       	rjmp	.+2      	; 0xd0 <.do_clear_bss_start>
+
+000000ce <.do_clear_bss_loop>:
+  ce:	1d 92       	st	X+, r1
+
+000000d0 <.do_clear_bss_start>:
+  d0:	aa 3c       	cpi	r26, 0xCA	; 202
+  d2:	b2 07       	cpc	r27, r18
+  d4:	e1 f7       	brne	.-8      	; 0xce <.do_clear_bss_loop>
+  d6:	28 d0       	rcall	.+80     	; 0x128 <main>
+  d8:	5f c2       	rjmp	.+1214   	; 0x598 <_exit>
+
+000000da <__bad_interrupt>:
+  da:	92 cf       	rjmp	.-220    	; 0x0 <__vectors>
+
+000000dc <HW_Init>:
+
+
+/****************** DEFINITIONS OF SERVICES *******************/
+void HW_Init(void)
+{
+	cli(); 		//globális megszakítások kikapcsolása
+  dc:	f8 94       	cli
+
+
+	//Nyomógombsor inicializálása
+	DDRG = 0;       //kapcsolósor portját bemenetként inicializáljuk
+  de:	10 92 64 00 	sts	0x0064, r1	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	PORTG = 0;      //felhúzóellenállások kikapcsolása
+  e2:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
+
+
+
+	//USART0 soros komm. init
+	// 9600 bps soros kommunikacio sebesseg beallitasa
+	UBRR0L = UBRR_ERTEK;    // UBRR_ERTEK also 8 bitjenek betoltese az UBRRL regiszterbe
+  e6:	87 e6       	ldi	r24, 0x67	; 103
+  e8:	89 b9       	out	0x09, r24	; 9
+	UBRR0H = (UBRR_ERTEK>>8);   // UBRR_ERTEK felso 8 bitjenek betoltese az UBRRH regiszterbe
+  ea:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <__TEXT_REGION_LENGTH__+0x7e0090>
+
+	// Aszinkron mod, 8 Adat Bit, Nincs Paritas Bit, 1 Stop Bit
+	UCSR0C |= (0 <<USBS ) | (3 << UCSZ0);
+  ee:	e5 e9       	ldi	r30, 0x95	; 149
+  f0:	f0 e0       	ldi	r31, 0x00	; 0
+  f2:	80 81       	ld	r24, Z
+  f4:	86 60       	ori	r24, 0x06	; 6
+  f6:	80 83       	st	Z, r24
+
+	//Ado es Vevo aramkorok bekapcsolasa + az RX interrupt engedelyezese
+	UCSR0B |= (1 << RXEN0) | (1 << TXEN0) | (1 << RXCIE0);
+  f8:	8a b1       	in	r24, 0x0a	; 10
+  fa:	88 69       	ori	r24, 0x98	; 152
+  fc:	8a b9       	out	0x0a, r24	; 10
+
+
+
+	//SLEEP MODE Elérhetõ legyen
+	MCUCR = 0b00100000;  //sleep mode enable
+  fe:	80 e2       	ldi	r24, 0x20	; 32
+ 100:	85 bf       	out	0x35, r24	; 53
+ 102:	08 95       	ret
+
+00000104 <SendCharOnUart0>:
+
+
+
+void SendCharOnUart0(char data) // Ez a fuggveny a kuldendo adatot beirja az UDR regiszter kimeno pufferjebe
+{
+	while(!(UCSR0A & (1<<UDRE0)))  // Varakozas amig az Ado kesz nem lesz az adatkuldesre
+ 104:	5d 9b       	sbis	0x0b, 5	; 11
+ 106:	fe cf       	rjmp	.-4      	; 0x104 <SendCharOnUart0>
+	{
+		//Varakozas
+	}
+	// Az Ado mar kesz az adatkuldesre, a kuldendo adatot a kimeno pufferjebe irjuk
+	UDR0=data;
+ 108:	8c b9       	out	0x0c, r24	; 12
+ 10a:	08 95       	ret
+
+0000010c <SendStringOnUart0>:
+}
+
+
+void SendStringOnUart0(char *ip)
+{
+ 10c:	cf 93       	push	r28
+ 10e:	df 93       	push	r29
+ 110:	ec 01       	movw	r28, r24
+	while(*ip)
+ 112:	88 81       	ld	r24, Y
+ 114:	88 23       	and	r24, r24
+ 116:	29 f0       	breq	.+10     	; 0x122 <SendStringOnUart0+0x16>
+ 118:	21 96       	adiw	r28, 0x01	; 1
+	{
+		SendCharOnUart0(*ip);
+ 11a:	f4 df       	rcall	.-24     	; 0x104 <SendCharOnUart0>
+}
+
+
+void SendStringOnUart0(char *ip)
+{
+	while(*ip)
+ 11c:	89 91       	ld	r24, Y+
+ 11e:	81 11       	cpse	r24, r1
+ 120:	fc cf       	rjmp	.-8      	; 0x11a <SendStringOnUart0+0xe>
+	{
+		SendCharOnUart0(*ip);
+		ip++;
+	}
+}
+ 122:	df 91       	pop	r29
+ 124:	cf 91       	pop	r28
+ 126:	08 95       	ret
+
+00000128 <main>:
+volatile int Counter = 0,ora=0,perc=0,mp=0,i=0, ertek=0, beall=0;
+
+/********************* FUNCTION MAIN *******************************/
+int main(void)
+{
+	HW_Init();
+ 128:	d9 df       	rcall	.-78     	; 0xdc <HW_Init>
+	SendCharOnUart0('\f'); //soros vonalon új oldal nyitása
+ 12a:	8c e0       	ldi	r24, 0x0C	; 12
+ 12c:	eb df       	rcall	.-42     	; 0x104 <SendCharOnUart0>
+	SendStringOnUart0("UART OK!\n\n\r");
+ 12e:	80 e0       	ldi	r24, 0x00	; 0
+ 130:	91 e0       	ldi	r25, 0x01	; 1
+ 132:	ec df       	rcall	.-40     	; 0x10c <SendStringOnUart0>
+	SendStringOnUart0("Ora beallitasa:o\n\r");
+ 134:	8c e0       	ldi	r24, 0x0C	; 12
+ 136:	91 e0       	ldi	r25, 0x01	; 1
+ 138:	e9 df       	rcall	.-46     	; 0x10c <SendStringOnUart0>
+	SendStringOnUart0("Ora inditasa:i\n\r");
+ 13a:	8f e1       	ldi	r24, 0x1F	; 31
+ 13c:	91 e0       	ldi	r25, 0x01	; 1
+ 13e:	e6 df       	rcall	.-52     	; 0x10c <SendStringOnUart0>
+	SendStringOnUart0("Ora leallitasa:s\n\r");
+ 140:	80 e3       	ldi	r24, 0x30	; 48
+ 142:	91 e0       	ldi	r25, 0x01	; 1
+ 144:	e3 df       	rcall	.-58     	; 0x10c <SendStringOnUart0>
+	SendStringOnUart0("\n\n\r");
+ 146:	88 e0       	ldi	r24, 0x08	; 8
+ 148:	91 e0       	ldi	r25, 0x01	; 1
+ 14a:	e0 df       	rcall	.-64     	; 0x10c <SendStringOnUart0>
+	
+	sei();			//global interrupts enable
+ 14c:	78 94       	sei
+	TIMSK=1;		//Timer0 Interrupt enable
+ 14e:	81 e0       	ldi	r24, 0x01	; 1
+ 150:	87 bf       	out	0x37, r24	; 55
+	TCCR0 = 0;		//Timer0 off
+ 152:	13 be       	out	0x33, r1	; 51
+
+	while (1)
+	{
+		
+	}
+ 154:	ff cf       	rjmp	.-2      	; 0x154 <main+0x2c>
+
+00000156 <anker>:
+}
+
+
+void anker(void)
+{	
+	mp++;			//mp novelese
+ 156:	80 91 c2 01 	lds	r24, 0x01C2	; 0x8001c2 <mp>
+ 15a:	90 91 c3 01 	lds	r25, 0x01C3	; 0x8001c3 <mp+0x1>
+ 15e:	01 96       	adiw	r24, 0x01	; 1
+ 160:	90 93 c3 01 	sts	0x01C3, r25	; 0x8001c3 <mp+0x1>
+ 164:	80 93 c2 01 	sts	0x01C2, r24	; 0x8001c2 <mp>
+	if(mp==60)		// ha mp eleri a 60-at
+ 168:	80 91 c2 01 	lds	r24, 0x01C2	; 0x8001c2 <mp>
+ 16c:	90 91 c3 01 	lds	r25, 0x01C3	; 0x8001c3 <mp+0x1>
+ 170:	cc 97       	sbiw	r24, 0x3c	; 60
+ 172:	69 f4       	brne	.+26     	; 0x18e <anker+0x38>
+	{
+		perc++;		//percet noveljuk
+ 174:	80 91 c4 01 	lds	r24, 0x01C4	; 0x8001c4 <perc>
+ 178:	90 91 c5 01 	lds	r25, 0x01C5	; 0x8001c5 <perc+0x1>
+ 17c:	01 96       	adiw	r24, 0x01	; 1
+ 17e:	90 93 c5 01 	sts	0x01C5, r25	; 0x8001c5 <perc+0x1>
+ 182:	80 93 c4 01 	sts	0x01C4, r24	; 0x8001c4 <perc>
+		mp=0;		//mp-t nullázzuk
+ 186:	10 92 c3 01 	sts	0x01C3, r1	; 0x8001c3 <mp+0x1>
+ 18a:	10 92 c2 01 	sts	0x01C2, r1	; 0x8001c2 <mp>
+	}
+	if(perc==60)	//ha perc eleri a 60-at
+ 18e:	80 91 c4 01 	lds	r24, 0x01C4	; 0x8001c4 <perc>
+ 192:	90 91 c5 01 	lds	r25, 0x01C5	; 0x8001c5 <perc+0x1>
+ 196:	cc 97       	sbiw	r24, 0x3c	; 60
+ 198:	69 f4       	brne	.+26     	; 0x1b4 <anker+0x5e>
+	{
+		ora++;		//orat noveljuk
+ 19a:	80 91 c6 01 	lds	r24, 0x01C6	; 0x8001c6 <ora>
+ 19e:	90 91 c7 01 	lds	r25, 0x01C7	; 0x8001c7 <ora+0x1>
+ 1a2:	01 96       	adiw	r24, 0x01	; 1
+ 1a4:	90 93 c7 01 	sts	0x01C7, r25	; 0x8001c7 <ora+0x1>
+ 1a8:	80 93 c6 01 	sts	0x01C6, r24	; 0x8001c6 <ora>
+		perc=0;		//percet nullazzuk
+ 1ac:	10 92 c5 01 	sts	0x01C5, r1	; 0x8001c5 <perc+0x1>
+ 1b0:	10 92 c4 01 	sts	0x01C4, r1	; 0x8001c4 <perc>
+	}
+	if(ora==24)		//ha ora eleri a 24-et
+ 1b4:	80 91 c6 01 	lds	r24, 0x01C6	; 0x8001c6 <ora>
+ 1b8:	90 91 c7 01 	lds	r25, 0x01C7	; 0x8001c7 <ora+0x1>
+ 1bc:	48 97       	sbiw	r24, 0x18	; 24
+ 1be:	21 f4       	brne	.+8      	; 0x1c8 <anker+0x72>
+	{
+		ora=0;		//orat nullazzuk
+ 1c0:	10 92 c7 01 	sts	0x01C7, r1	; 0x8001c7 <ora+0x1>
+ 1c4:	10 92 c6 01 	sts	0x01C6, r1	; 0x8001c6 <ora>
+ 1c8:	08 95       	ret
+
+000001ca <orakijelzes>:
+	}
+}
+
+void orakijelzes(void)
+{
+ 1ca:	cf 93       	push	r28
+ 1cc:	df 93       	push	r29
+	SendStringOnUart0("\r");
+ 1ce:	8a e0       	ldi	r24, 0x0A	; 10
+ 1d0:	91 e0       	ldi	r25, 0x01	; 1
+ 1d2:	9c df       	rcall	.-200    	; 0x10c <SendStringOnUart0>
+	SendCharOnUart0(ora/10+48);		// ora tizes helyiertekenek elkuldese
+ 1d4:	80 91 c6 01 	lds	r24, 0x01C6	; 0x8001c6 <ora>
+ 1d8:	90 91 c7 01 	lds	r25, 0x01C7	; 0x8001c7 <ora+0x1>
+ 1dc:	ca e0       	ldi	r28, 0x0A	; 10
+ 1de:	d0 e0       	ldi	r29, 0x00	; 0
+ 1e0:	be 01       	movw	r22, r28
+ 1e2:	aa d1       	rcall	.+852    	; 0x538 <__divmodhi4>
+ 1e4:	80 e3       	ldi	r24, 0x30	; 48
+ 1e6:	86 0f       	add	r24, r22
+ 1e8:	8d df       	rcall	.-230    	; 0x104 <SendCharOnUart0>
+	SendCharOnUart0(ora%10+48);		//ora egyes helyiertekenek elkuldese
+ 1ea:	80 91 c6 01 	lds	r24, 0x01C6	; 0x8001c6 <ora>
+ 1ee:	90 91 c7 01 	lds	r25, 0x01C7	; 0x8001c7 <ora+0x1>
+ 1f2:	be 01       	movw	r22, r28
+ 1f4:	a1 d1       	rcall	.+834    	; 0x538 <__divmodhi4>
+ 1f6:	80 5d       	subi	r24, 0xD0	; 208
+ 1f8:	85 df       	rcall	.-246    	; 0x104 <SendCharOnUart0>
+	SendCharOnUart0(':');      
+ 1fa:	8a e3       	ldi	r24, 0x3A	; 58
+ 1fc:	83 df       	rcall	.-250    	; 0x104 <SendCharOnUart0>
+	SendCharOnUart0(perc/10+48);	// perc tizes helyiertekenek elkuldese
+ 1fe:	80 91 c4 01 	lds	r24, 0x01C4	; 0x8001c4 <perc>
+ 202:	90 91 c5 01 	lds	r25, 0x01C5	; 0x8001c5 <perc+0x1>
+ 206:	be 01       	movw	r22, r28
+ 208:	97 d1       	rcall	.+814    	; 0x538 <__divmodhi4>
+ 20a:	80 e3       	ldi	r24, 0x30	; 48
+ 20c:	86 0f       	add	r24, r22
+ 20e:	7a df       	rcall	.-268    	; 0x104 <SendCharOnUart0>
+	SendCharOnUart0(perc%10+48);	//perc egyes helyiertekenek elkuldese
+ 210:	80 91 c4 01 	lds	r24, 0x01C4	; 0x8001c4 <perc>
+ 214:	90 91 c5 01 	lds	r25, 0x01C5	; 0x8001c5 <perc+0x1>
+ 218:	be 01       	movw	r22, r28
+ 21a:	8e d1       	rcall	.+796    	; 0x538 <__divmodhi4>
+ 21c:	80 5d       	subi	r24, 0xD0	; 208
+ 21e:	72 df       	rcall	.-284    	; 0x104 <SendCharOnUart0>
+	SendCharOnUart0(':');      
+ 220:	8a e3       	ldi	r24, 0x3A	; 58
+ 222:	70 df       	rcall	.-288    	; 0x104 <SendCharOnUart0>
+	SendCharOnUart0(mp/10+48);		// mp tizes helyiertekenek elkuldese
+ 224:	80 91 c2 01 	lds	r24, 0x01C2	; 0x8001c2 <mp>
+ 228:	90 91 c3 01 	lds	r25, 0x01C3	; 0x8001c3 <mp+0x1>
+ 22c:	be 01       	movw	r22, r28
+ 22e:	84 d1       	rcall	.+776    	; 0x538 <__divmodhi4>
+ 230:	80 e3       	ldi	r24, 0x30	; 48
+ 232:	86 0f       	add	r24, r22
+ 234:	67 df       	rcall	.-306    	; 0x104 <SendCharOnUart0>
+	SendCharOnUart0(mp%10+48);		//mp egyes helyiertekenek elkuldese
+ 236:	80 91 c2 01 	lds	r24, 0x01C2	; 0x8001c2 <mp>
+ 23a:	90 91 c3 01 	lds	r25, 0x01C3	; 0x8001c3 <mp+0x1>
+ 23e:	be 01       	movw	r22, r28
+ 240:	7b d1       	rcall	.+758    	; 0x538 <__divmodhi4>
+ 242:	80 5d       	subi	r24, 0xD0	; 208
+ 244:	5f df       	rcall	.-322    	; 0x104 <SendCharOnUart0>
+}
+ 246:	df 91       	pop	r29
+ 248:	cf 91       	pop	r28
+ 24a:	08 95       	ret
+
+0000024c <__vector_16>:
+/******************** INTERRUPT SERVICE ROUTINES *****************************/
+ISR(TIMER0_OVF_vect)
+{
+ 24c:	1f 92       	push	r1
+ 24e:	0f 92       	push	r0
+ 250:	0f b6       	in	r0, 0x3f	; 63
+ 252:	0f 92       	push	r0
+ 254:	11 24       	eor	r1, r1
+ 256:	0b b6       	in	r0, 0x3b	; 59
+ 258:	0f 92       	push	r0
+ 25a:	2f 93       	push	r18
+ 25c:	3f 93       	push	r19
+ 25e:	4f 93       	push	r20
+ 260:	5f 93       	push	r21
+ 262:	6f 93       	push	r22
+ 264:	7f 93       	push	r23
+ 266:	8f 93       	push	r24
+ 268:	9f 93       	push	r25
+ 26a:	af 93       	push	r26
+ 26c:	bf 93       	push	r27
+ 26e:	ef 93       	push	r30
+ 270:	ff 93       	push	r31
+	Counter++;
+ 272:	80 91 c8 01 	lds	r24, 0x01C8	; 0x8001c8 <Counter>
+ 276:	90 91 c9 01 	lds	r25, 0x01C9	; 0x8001c9 <Counter+0x1>
+ 27a:	01 96       	adiw	r24, 0x01	; 1
+ 27c:	90 93 c9 01 	sts	0x01C9, r25	; 0x8001c9 <Counter+0x1>
+ 280:	80 93 c8 01 	sts	0x01C8, r24	; 0x8001c8 <Counter>
+	if(Counter>=61) //ha eltelt 1 mp
+ 284:	80 91 c8 01 	lds	r24, 0x01C8	; 0x8001c8 <Counter>
+ 288:	90 91 c9 01 	lds	r25, 0x01C9	; 0x8001c9 <Counter+0x1>
+ 28c:	cd 97       	sbiw	r24, 0x3d	; 61
+ 28e:	34 f0       	brlt	.+12     	; 0x29c <__vector_16+0x50>
+	{
+		Counter = 0;
+ 290:	10 92 c9 01 	sts	0x01C9, r1	; 0x8001c9 <Counter+0x1>
+ 294:	10 92 c8 01 	sts	0x01C8, r1	; 0x8001c8 <Counter>
+		
+		anker();
+ 298:	5e df       	rcall	.-324    	; 0x156 <anker>
+		orakijelzes();
+ 29a:	97 df       	rcall	.-210    	; 0x1ca <orakijelzes>
+
+	}
+	
+
+}
+ 29c:	ff 91       	pop	r31
+ 29e:	ef 91       	pop	r30
+ 2a0:	bf 91       	pop	r27
+ 2a2:	af 91       	pop	r26
+ 2a4:	9f 91       	pop	r25
+ 2a6:	8f 91       	pop	r24
+ 2a8:	7f 91       	pop	r23
+ 2aa:	6f 91       	pop	r22
+ 2ac:	5f 91       	pop	r21
+ 2ae:	4f 91       	pop	r20
+ 2b0:	3f 91       	pop	r19
+ 2b2:	2f 91       	pop	r18
+ 2b4:	0f 90       	pop	r0
+ 2b6:	0b be       	out	0x3b, r0	; 59
+ 2b8:	0f 90       	pop	r0
+ 2ba:	0f be       	out	0x3f, r0	; 63
+ 2bc:	0f 90       	pop	r0
+ 2be:	1f 90       	pop	r1
+ 2c0:	18 95       	reti
+
+000002c2 <__vector_18>:
+
+ISR(USART0_RX_vect)  //soros adat érkezett, interrrupt, ide adódik a vezérlés
+{
+ 2c2:	1f 92       	push	r1
+ 2c4:	0f 92       	push	r0
+ 2c6:	0f b6       	in	r0, 0x3f	; 63
+ 2c8:	0f 92       	push	r0
+ 2ca:	11 24       	eor	r1, r1
+ 2cc:	0b b6       	in	r0, 0x3b	; 59
+ 2ce:	0f 92       	push	r0
+ 2d0:	2f 93       	push	r18
+ 2d2:	3f 93       	push	r19
+ 2d4:	4f 93       	push	r20
+ 2d6:	5f 93       	push	r21
+ 2d8:	6f 93       	push	r22
+ 2da:	7f 93       	push	r23
+ 2dc:	8f 93       	push	r24
+ 2de:	9f 93       	push	r25
+ 2e0:	af 93       	push	r26
+ 2e2:	bf 93       	push	r27
+ 2e4:	ef 93       	push	r30
+ 2e6:	ff 93       	push	r31
+	char ReceivedByte0 = UDR0; //erkezett adat tarolasa
+ 2e8:	ec b1       	in	r30, 0x0c	; 12
+	
+	
+	if (beall == 0) // mukodesi uzem
+ 2ea:	80 91 bc 01 	lds	r24, 0x01BC	; 0x8001bc <__data_end>
+ 2ee:	90 91 bd 01 	lds	r25, 0x01BD	; 0x8001bd <__data_end+0x1>
+ 2f2:	89 2b       	or	r24, r25
+ 2f4:	99 f4       	brne	.+38     	; 0x31c <__vector_18+0x5a>
+	{
+		
+		switch(ReceivedByte0) //fogadott adat ertekelese
+ 2f6:	ef 36       	cpi	r30, 0x6F	; 111
+ 2f8:	51 f0       	breq	.+20     	; 0x30e <__vector_18+0x4c>
+ 2fa:	e3 37       	cpi	r30, 0x73	; 115
+ 2fc:	31 f0       	breq	.+12     	; 0x30a <__vector_18+0x48>
+ 2fe:	e9 36       	cpi	r30, 0x69	; 105
+ 300:	09 f0       	breq	.+2      	; 0x304 <__vector_18+0x42>
+ 302:	06 c1       	rjmp	.+524    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+		{
+		case 'i': TCCR0=7; break;		//Timer0 inditas
+ 304:	87 e0       	ldi	r24, 0x07	; 7
+ 306:	83 bf       	out	0x33, r24	; 51
+ 308:	03 c1       	rjmp	.+518    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+		case 's': TCCR0=0; break;		//Timer0 leallitas
+ 30a:	13 be       	out	0x33, r1	; 51
+ 30c:	01 c1       	rjmp	.+514    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+		case 'o': beall=1; break;		// beallito uzemet bekapcsoljuk
+ 30e:	81 e0       	ldi	r24, 0x01	; 1
+ 310:	90 e0       	ldi	r25, 0x00	; 0
+ 312:	90 93 bd 01 	sts	0x01BD, r25	; 0x8001bd <__data_end+0x1>
+ 316:	80 93 bc 01 	sts	0x01BC, r24	; 0x8001bc <__data_end>
+ 31a:	fa c0       	rjmp	.+500    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+		default:break;
+		}
+	}else 
+	if (beall ==1)						//beallito uzem
+ 31c:	80 91 bc 01 	lds	r24, 0x01BC	; 0x8001bc <__data_end>
+ 320:	90 91 bd 01 	lds	r25, 0x01BD	; 0x8001bd <__data_end+0x1>
+ 324:	01 97       	sbiw	r24, 0x01	; 1
+ 326:	09 f0       	breq	.+2      	; 0x32a <__vector_18+0x68>
+ 328:	f3 c0       	rjmp	.+486    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+	{	
+		TCCR0 =0;						// az ora mukodeset leallitjuk
+ 32a:	13 be       	out	0x33, r1	; 51
+		switch(ReceivedByte0)			//fogadott adat ertekelese
+ 32c:	8e 2f       	mov	r24, r30
+ 32e:	90 e0       	ldi	r25, 0x00	; 0
+ 330:	fc 01       	movw	r30, r24
+ 332:	f0 97       	sbiw	r30, 0x30	; 48
+ 334:	ea 30       	cpi	r30, 0x0A	; 10
+ 336:	f1 05       	cpc	r31, r1
+ 338:	08 f0       	brcs	.+2      	; 0x33c <__vector_18+0x7a>
+ 33a:	46 c0       	rjmp	.+140    	; 0x3c8 <__vector_18+0x106>
+ 33c:	ea 5b       	subi	r30, 0xBA	; 186
+ 33e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 340:	0e c1       	rjmp	.+540    	; 0x55e <__tablejump2__>
+		{
+			case '0': ertek=0; break;	//a fogadott ascii karakter helyett 0 int tipust irunk az ertek valtozoba
+ 342:	10 92 bf 01 	sts	0x01BF, r1	; 0x8001bf <ertek+0x1>
+ 346:	10 92 be 01 	sts	0x01BE, r1	; 0x8001be <ertek>
+ 34a:	3e c0       	rjmp	.+124    	; 0x3c8 <__vector_18+0x106>
+			case '1': ertek=1; break;	//a fogadott ascii karakter helyett 1 int tipust irunk az ertek valtozoba
+ 34c:	81 e0       	ldi	r24, 0x01	; 1
+ 34e:	90 e0       	ldi	r25, 0x00	; 0
+ 350:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 354:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 358:	37 c0       	rjmp	.+110    	; 0x3c8 <__vector_18+0x106>
+			case '2': ertek=2; break;	//a fogadott ascii karakter helyett 2 int tipust irunk az ertek valtozoba
+ 35a:	82 e0       	ldi	r24, 0x02	; 2
+ 35c:	90 e0       	ldi	r25, 0x00	; 0
+ 35e:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 362:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 366:	30 c0       	rjmp	.+96     	; 0x3c8 <__vector_18+0x106>
+			case '3': ertek=3; break;	//a fogadott ascii karakter helyett 3 int tipust irunk az ertek valtozoba
+ 368:	83 e0       	ldi	r24, 0x03	; 3
+ 36a:	90 e0       	ldi	r25, 0x00	; 0
+ 36c:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 370:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 374:	29 c0       	rjmp	.+82     	; 0x3c8 <__vector_18+0x106>
+			case '4': ertek=4; break;	//a fogadott ascii karakter helyett 4 int tipust irunk az ertek valtozoba
+ 376:	84 e0       	ldi	r24, 0x04	; 4
+ 378:	90 e0       	ldi	r25, 0x00	; 0
+ 37a:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 37e:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 382:	22 c0       	rjmp	.+68     	; 0x3c8 <__vector_18+0x106>
+			case '5': ertek=5; break;	//a fogadott ascii karakter helyett 5 int tipust irunk az ertek valtozoba
+ 384:	85 e0       	ldi	r24, 0x05	; 5
+ 386:	90 e0       	ldi	r25, 0x00	; 0
+ 388:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 38c:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 390:	1b c0       	rjmp	.+54     	; 0x3c8 <__vector_18+0x106>
+			case '6': ertek=6; break;	//a fogadott ascii karakter helyett 6 int tipust irunk az ertek valtozoba
+ 392:	86 e0       	ldi	r24, 0x06	; 6
+ 394:	90 e0       	ldi	r25, 0x00	; 0
+ 396:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 39a:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 39e:	14 c0       	rjmp	.+40     	; 0x3c8 <__vector_18+0x106>
+			case '7': ertek=7; break;	//a fogadott ascii karakter helyett 7 int tipust irunk az ertek valtozoba
+ 3a0:	87 e0       	ldi	r24, 0x07	; 7
+ 3a2:	90 e0       	ldi	r25, 0x00	; 0
+ 3a4:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 3a8:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 3ac:	0d c0       	rjmp	.+26     	; 0x3c8 <__vector_18+0x106>
+			case '8': ertek=8; break;	//a fogadott ascii karakter helyett 8 int tipust irunk az ertek valtozoba
+ 3ae:	88 e0       	ldi	r24, 0x08	; 8
+ 3b0:	90 e0       	ldi	r25, 0x00	; 0
+ 3b2:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 3b6:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+ 3ba:	06 c0       	rjmp	.+12     	; 0x3c8 <__vector_18+0x106>
+			case '9': ertek=9; break;	//a fogadott ascii karakter helyett 9 int tipust irunk az ertek valtozoba
+ 3bc:	89 e0       	ldi	r24, 0x09	; 9
+ 3be:	90 e0       	ldi	r25, 0x00	; 0
+ 3c0:	90 93 bf 01 	sts	0x01BF, r25	; 0x8001bf <ertek+0x1>
+ 3c4:	80 93 be 01 	sts	0x01BE, r24	; 0x8001be <ertek>
+			default:break;
+		}
+		if(i==0)						// ora tizes helyiertekenek bekerese (segedvaltozo,hogy melyik helyierteket irjuk)
+ 3c8:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <i>
+ 3cc:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <i+0x1>
+ 3d0:	89 2b       	or	r24, r25
+ 3d2:	f1 f4       	brne	.+60     	; 0x410 <__LOCK_REGION_LENGTH__+0x10>
+		{			
+			ora = ertek*10;				//ora tizedes helyiertekenek megadasa
+ 3d4:	80 91 be 01 	lds	r24, 0x01BE	; 0x8001be <ertek>
+ 3d8:	90 91 bf 01 	lds	r25, 0x01BF	; 0x8001bf <ertek+0x1>
+ 3dc:	9c 01       	movw	r18, r24
+ 3de:	22 0f       	add	r18, r18
+ 3e0:	33 1f       	adc	r19, r19
+ 3e2:	88 0f       	add	r24, r24
+ 3e4:	99 1f       	adc	r25, r25
+ 3e6:	88 0f       	add	r24, r24
+ 3e8:	99 1f       	adc	r25, r25
+ 3ea:	88 0f       	add	r24, r24
+ 3ec:	99 1f       	adc	r25, r25
+ 3ee:	82 0f       	add	r24, r18
+ 3f0:	93 1f       	adc	r25, r19
+ 3f2:	90 93 c7 01 	sts	0x01C7, r25	; 0x8001c7 <ora+0x1>
+ 3f6:	80 93 c6 01 	sts	0x01C6, r24	; 0x8001c6 <ora>
+			i++;						//segedvaltozo novelese
+ 3fa:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <i>
+ 3fe:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <i+0x1>
+ 402:	01 96       	adiw	r24, 0x01	; 1
+ 404:	90 93 c1 01 	sts	0x01C1, r25	; 0x8001c1 <i+0x1>
+ 408:	80 93 c0 01 	sts	0x01C0, r24	; 0x8001c0 <i>
+			orakijelzes();				//ido kijelzese
+ 40c:	de de       	rcall	.-580    	; 0x1ca <orakijelzes>
+ 40e:	80 c0       	rjmp	.+256    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+		}else
+		if (i== 1)						// ora egyes helyiertekenek bekerese
+ 410:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <i>
+ 414:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <i+0x1>
+ 418:	01 97       	sbiw	r24, 0x01	; 1
+ 41a:	39 f5       	brne	.+78     	; 0x46a <__LOCK_REGION_LENGTH__+0x6a>
+		{
+			ora = ora+ertek;			//ora egyes helyierteket hozzaadjuk
+ 41c:	20 91 c6 01 	lds	r18, 0x01C6	; 0x8001c6 <ora>
+ 420:	30 91 c7 01 	lds	r19, 0x01C7	; 0x8001c7 <ora+0x1>
+ 424:	80 91 be 01 	lds	r24, 0x01BE	; 0x8001be <ertek>
+ 428:	90 91 bf 01 	lds	r25, 0x01BF	; 0x8001bf <ertek+0x1>
+ 42c:	82 0f       	add	r24, r18
+ 42e:	93 1f       	adc	r25, r19
+ 430:	90 93 c7 01 	sts	0x01C7, r25	; 0x8001c7 <ora+0x1>
+ 434:	80 93 c6 01 	sts	0x01C6, r24	; 0x8001c6 <ora>
+			i++;						//segedvaltozo novelese
+ 438:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <i>
+ 43c:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <i+0x1>
+ 440:	01 96       	adiw	r24, 0x01	; 1
+ 442:	90 93 c1 01 	sts	0x01C1, r25	; 0x8001c1 <i+0x1>
+ 446:	80 93 c0 01 	sts	0x01C0, r24	; 0x8001c0 <i>
+			orakijelzes();				//ido kijelzese
+ 44a:	bf de       	rcall	.-642    	; 0x1ca <orakijelzes>
+			if ( ora > 23)				// hibakezeles, ha ora nagyobb mint 23 
+ 44c:	80 91 c6 01 	lds	r24, 0x01C6	; 0x8001c6 <ora>
+ 450:	90 91 c7 01 	lds	r25, 0x01C7	; 0x8001c7 <ora+0x1>
+ 454:	48 97       	sbiw	r24, 0x18	; 24
+ 456:	0c f4       	brge	.+2      	; 0x45a <__LOCK_REGION_LENGTH__+0x5a>
+ 458:	5b c0       	rjmp	.+182    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+			{
+				i=0;					// segedvaltozo nullazasa, hogy ujra bekerje az ora erteket	
+ 45a:	10 92 c1 01 	sts	0x01C1, r1	; 0x8001c1 <i+0x1>
+ 45e:	10 92 c0 01 	sts	0x01C0, r1	; 0x8001c0 <i>
+				SendStringOnUart0("\n\rHibas bevitel, ird be a pontos orat!\n\r");	// tajekozatas
+ 462:	83 e4       	ldi	r24, 0x43	; 67
+ 464:	91 e0       	ldi	r25, 0x01	; 1
+ 466:	52 de       	rcall	.-860    	; 0x10c <SendStringOnUart0>
+ 468:	53 c0       	rjmp	.+166    	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+			}
+		}else
+		if (i ==2)						// perc tizes helyiertekenek bekerese
+ 46a:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <i>
+ 46e:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <i+0x1>
+ 472:	02 97       	sbiw	r24, 0x02	; 2
+ 474:	f1 f4       	brne	.+60     	; 0x4b2 <__LOCK_REGION_LENGTH__+0xb2>
+		{
+			perc = ertek*10;			// perc tizes helyiertekenek megadasa
+ 476:	80 91 be 01 	lds	r24, 0x01BE	; 0x8001be <ertek>
+ 47a:	90 91 bf 01 	lds	r25, 0x01BF	; 0x8001bf <ertek+0x1>
+ 47e:	9c 01       	movw	r18, r24
+ 480:	22 0f       	add	r18, r18
+ 482:	33 1f       	adc	r19, r19
+ 484:	88 0f       	add	r24, r24
+ 486:	99 1f       	adc	r25, r25
+ 488:	88 0f       	add	r24, r24
+ 48a:	99 1f       	adc	r25, r25
+ 48c:	88 0f       	add	r24, r24
+ 48e:	99 1f       	adc	r25, r25
+ 490:	82 0f       	add	r24, r18
+ 492:	93 1f       	adc	r25, r19
+ 494:	90 93 c5 01 	sts	0x01C5, r25	; 0x8001c5 <perc+0x1>
+ 498:	80 93 c4 01 	sts	0x01C4, r24	; 0x8001c4 <perc>
+			i++;						//segedvaltozo novelese
+ 49c:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <i>
+ 4a0:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <i+0x1>
+ 4a4:	01 96       	adiw	r24, 0x01	; 1
+ 4a6:	90 93 c1 01 	sts	0x01C1, r25	; 0x8001c1 <i+0x1>
+ 4aa:	80 93 c0 01 	sts	0x01C0, r24	; 0x8001c0 <i>
+			orakijelzes();				//ido kijelzese
+ 4ae:	8d de       	rcall	.-742    	; 0x1ca <orakijelzes>
+ 4b0:	2f c0       	rjmp	.+94     	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+		}else
+ 		if (i==3)						// perc egyes helyiertekenek bekerese
+ 4b2:	80 91 c0 01 	lds	r24, 0x01C0	; 0x8001c0 <i>
+ 4b6:	90 91 c1 01 	lds	r25, 0x01C1	; 0x8001c1 <i+0x1>
+ 4ba:	03 97       	sbiw	r24, 0x03	; 3
+ 4bc:	49 f5       	brne	.+82     	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+		{
+			perc = perc+ertek;			// perc egyes helyiertekenek megadasa
+ 4be:	20 91 c4 01 	lds	r18, 0x01C4	; 0x8001c4 <perc>
+ 4c2:	30 91 c5 01 	lds	r19, 0x01C5	; 0x8001c5 <perc+0x1>
+ 4c6:	80 91 be 01 	lds	r24, 0x01BE	; 0x8001be <ertek>
+ 4ca:	90 91 bf 01 	lds	r25, 0x01BF	; 0x8001bf <ertek+0x1>
+ 4ce:	82 0f       	add	r24, r18
+ 4d0:	93 1f       	adc	r25, r19
+ 4d2:	90 93 c5 01 	sts	0x01C5, r25	; 0x8001c5 <perc+0x1>
+ 4d6:	80 93 c4 01 	sts	0x01C4, r24	; 0x8001c4 <perc>
+			if (perc > 59)				//hibakezeles, ha perc nagyobb mint 59
+ 4da:	80 91 c4 01 	lds	r24, 0x01C4	; 0x8001c4 <perc>
+ 4de:	90 91 c5 01 	lds	r25, 0x01C5	; 0x8001c5 <perc+0x1>
+ 4e2:	cc 97       	sbiw	r24, 0x3c	; 60
+ 4e4:	54 f0       	brlt	.+20     	; 0x4fa <__LOCK_REGION_LENGTH__+0xfa>
+			{
+			i=2;						// segedvaltozo 2-es ertek, hogy ujra bekerje a percet
+ 4e6:	82 e0       	ldi	r24, 0x02	; 2
+ 4e8:	90 e0       	ldi	r25, 0x00	; 0
+ 4ea:	90 93 c1 01 	sts	0x01C1, r25	; 0x8001c1 <i+0x1>
+ 4ee:	80 93 c0 01 	sts	0x01C0, r24	; 0x8001c0 <i>
+			SendStringOnUart0("\n\rHibas bevitel, ird be a pontos percet!\n\r");	//tajekoztatas
+ 4f2:	8c e6       	ldi	r24, 0x6C	; 108
+ 4f4:	91 e0       	ldi	r25, 0x01	; 1
+ 4f6:	0a de       	rcall	.-1004   	; 0x10c <SendStringOnUart0>
+ 4f8:	0b c0       	rjmp	.+22     	; 0x510 <__LOCK_REGION_LENGTH__+0x110>
+			}else 
+			{
+				i=0;					//segedvaltozo nullazas
+ 4fa:	10 92 c1 01 	sts	0x01C1, r1	; 0x8001c1 <i+0x1>
+ 4fe:	10 92 c0 01 	sts	0x01C0, r1	; 0x8001c0 <i>
+				beall=0;				//uzemmod visszaallitva mukodesre
+ 502:	10 92 bd 01 	sts	0x01BD, r1	; 0x8001bd <__data_end+0x1>
+ 506:	10 92 bc 01 	sts	0x01BC, r1	; 0x8001bc <__data_end>
+				SendStringOnUart0("\n\rOra beallitva, inditas i gombbal\n\r");
+ 50a:	87 e9       	ldi	r24, 0x97	; 151
+ 50c:	91 e0       	ldi	r25, 0x01	; 1
+ 50e:	fe dd       	rcall	.-1028   	; 0x10c <SendStringOnUart0>
+			}
+			
+		}
+	}
+	orakijelzes();						//ido kijelzese
+ 510:	5c de       	rcall	.-840    	; 0x1ca <orakijelzes>
+	
+}
+ 512:	ff 91       	pop	r31
+ 514:	ef 91       	pop	r30
+ 516:	bf 91       	pop	r27
+ 518:	af 91       	pop	r26
+ 51a:	9f 91       	pop	r25
+ 51c:	8f 91       	pop	r24
+ 51e:	7f 91       	pop	r23
+ 520:	6f 91       	pop	r22
+ 522:	5f 91       	pop	r21
+ 524:	4f 91       	pop	r20
+ 526:	3f 91       	pop	r19
+ 528:	2f 91       	pop	r18
+ 52a:	0f 90       	pop	r0
+ 52c:	0b be       	out	0x3b, r0	; 59
+ 52e:	0f 90       	pop	r0
+ 530:	0f be       	out	0x3f, r0	; 63
+ 532:	0f 90       	pop	r0
+ 534:	1f 90       	pop	r1
+ 536:	18 95       	reti
+
+00000538 <__divmodhi4>:
+ 538:	97 fb       	bst	r25, 7
+ 53a:	07 2e       	mov	r0, r23
+ 53c:	16 f4       	brtc	.+4      	; 0x542 <__divmodhi4+0xa>
+ 53e:	00 94       	com	r0
+ 540:	06 d0       	rcall	.+12     	; 0x54e <__divmodhi4_neg1>
+ 542:	77 fd       	sbrc	r23, 7
+ 544:	08 d0       	rcall	.+16     	; 0x556 <__divmodhi4_neg2>
+ 546:	14 d0       	rcall	.+40     	; 0x570 <__udivmodhi4>
+ 548:	07 fc       	sbrc	r0, 7
+ 54a:	05 d0       	rcall	.+10     	; 0x556 <__divmodhi4_neg2>
+ 54c:	3e f4       	brtc	.+14     	; 0x55c <__divmodhi4_exit>
+
+0000054e <__divmodhi4_neg1>:
+ 54e:	90 95       	com	r25
+ 550:	81 95       	neg	r24
+ 552:	9f 4f       	sbci	r25, 0xFF	; 255
+ 554:	08 95       	ret
+
+00000556 <__divmodhi4_neg2>:
+ 556:	70 95       	com	r23
+ 558:	61 95       	neg	r22
+ 55a:	7f 4f       	sbci	r23, 0xFF	; 255
+
+0000055c <__divmodhi4_exit>:
+ 55c:	08 95       	ret
+
+0000055e <__tablejump2__>:
+ 55e:	ee 0f       	add	r30, r30
+ 560:	ff 1f       	adc	r31, r31
+ 562:	00 24       	eor	r0, r0
+ 564:	00 1c       	adc	r0, r0
+ 566:	0b be       	out	0x3b, r0	; 59
+ 568:	07 90       	elpm	r0, Z+
+ 56a:	f6 91       	elpm	r31, Z
+ 56c:	e0 2d       	mov	r30, r0
+ 56e:	09 94       	ijmp
+
+00000570 <__udivmodhi4>:
+ 570:	aa 1b       	sub	r26, r26
+ 572:	bb 1b       	sub	r27, r27
+ 574:	51 e1       	ldi	r21, 0x11	; 17
+ 576:	07 c0       	rjmp	.+14     	; 0x586 <__udivmodhi4_ep>
+
+00000578 <__udivmodhi4_loop>:
+ 578:	aa 1f       	adc	r26, r26
+ 57a:	bb 1f       	adc	r27, r27
+ 57c:	a6 17       	cp	r26, r22
+ 57e:	b7 07       	cpc	r27, r23
+ 580:	10 f0       	brcs	.+4      	; 0x586 <__udivmodhi4_ep>
+ 582:	a6 1b       	sub	r26, r22
+ 584:	b7 0b       	sbc	r27, r23
+
+00000586 <__udivmodhi4_ep>:
+ 586:	88 1f       	adc	r24, r24
+ 588:	99 1f       	adc	r25, r25
+ 58a:	5a 95       	dec	r21
+ 58c:	a9 f7       	brne	.-22     	; 0x578 <__udivmodhi4_loop>
+ 58e:	80 95       	com	r24
+ 590:	90 95       	com	r25
+ 592:	bc 01       	movw	r22, r24
+ 594:	cd 01       	movw	r24, r26
+ 596:	08 95       	ret
+
+00000598 <_exit>:
+ 598:	f8 94       	cli
+
+0000059a <__stop_program>:
+ 59a:	ff cf       	rjmp	.-2      	; 0x59a <__stop_program>
